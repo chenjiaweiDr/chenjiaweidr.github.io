@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos – Jiawei Chen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <a class="nav-brand" href="index.html">Jiawei Chen</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="photos.html" class="active">Photos</a></li>
+                <li><a href="CV_Jiawei_Chen.pdf" target="_blank">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-wrapper">
+        <div class="photos-container">
+
+            <h1>Photos</h1>
+            <p class="photos-intro">A glimpse of life beyond the office — travels, conferences, and moments worth remembering.</p>
+
+            <!-- Photo grid -->
+            <!-- To add more photos: copy a <div class="photo-item"> block and update the src -->
+            <div class="photo-grid">
+
+                <div class="photo-item" onclick="openLightbox('photos/fig1.jpg')">
+                    <img src="photos/fig1.jpg" alt="Photo 1" loading="lazy">
+                </div>
+
+                <!-- Add more photos below as fig2.jpg, fig3.jpg, etc. -->
+                <!-- Example:
+                <div class="photo-item" onclick="openLightbox('photos/fig2.jpg')">
+                    <img src="photos/fig2.jpg" alt="Photo 2" loading="lazy">
+                </div>
+                -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox overlay -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Jiawei Chen &nbsp;&middot;&nbsp; Department of Aerospace Engineering, Iowa State University</p>
+    </footer>
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.getElementById('lightbox-img').src = '';
+        }
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+
+</body>
+</html>

@@ -492,6 +492,15 @@ nav {
     margin-bottom: 16px;
 }
 
+/* Fixed column counts override the auto-fit default */
+.research-figures.cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.research-figures.cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .research-figure {
     display: flex;
     flex-direction: column;
@@ -580,6 +589,102 @@ nav {
 .research-coming-soon p {
     font-size: 14px;
     margin: 0;
+}
+
+/* ===== Photos Page ===== */
+.photos-container {
+    padding-top: 28px;
+}
+
+.photos-container > h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+.photos-container > .photos-intro {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 36px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.photo-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    aspect-ratio: 4 / 3;
+    background: #f3f4f6;
+    cursor: pointer;
+}
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.photo-item:hover img {
+    transform: scale(1.04);
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.88);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+}
+
+.lightbox-close {
+    position: fixed;
+    top: 20px;
+    right: 28px;
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    line-height: 1;
+    opacity: 0.8;
+    transition: opacity 0.15s;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.lightbox-close:hover {
+    opacity: 1;
+}
+
+@media (max-width: 740px) {
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
 }
 
 /* ===== Footer ===== */
