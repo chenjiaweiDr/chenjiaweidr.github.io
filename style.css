@@ -11,7 +11,11 @@ body {
     font-size: 15px;
     line-height: 1.7;
     color: #2d2d2d;
-    background: #ffffff;
+    background-color: #0a2a8c;
+    background-image: url('background/DIT.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 a {
@@ -95,6 +99,8 @@ nav {
     max-width: 980px;
     margin: 0 auto;
     padding: 80px 28px 60px;
+    background-color: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 0 60px rgba(0, 20, 100, 0.18);
 }
 
 /* ===== Home: Two-Column Layout ===== */
@@ -718,15 +724,24 @@ nav {
 /* ===== Footer ===== */
 footer {
     border-top: 1px solid #e5e7eb;
-    margin-top: 60px;
+    margin-top: 0;
     padding: 24px 20px;
     text-align: center;
     color: #9ca3af;
     font-size: 12.5px;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 4px 60px rgba(0, 20, 100, 0.18);
 }
 
 /* ===== Responsive ===== */
 @media (max-width: 740px) {
+    body {
+        background-attachment: scroll;
+    }
+
     .home-layout {
         grid-template-columns: 1fr;
         gap: 32px;
