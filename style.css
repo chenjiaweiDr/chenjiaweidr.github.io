@@ -101,168 +101,80 @@ nav {
     padding: 80px 28px 60px;
 }
 
-/* ===== Hero (Home page only) ===== */
-.hero {
-    height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 0 10%;
+/* ===== Home page background + text colors ===== */
+body.page-home {
     background-image: url('background/DIT.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    overflow: hidden;
+    background-color: #0a2a8c;
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        105deg,
-        rgba(0, 5, 30, 0.80) 0%,
-        rgba(0, 10, 50, 0.55) 60%,
-        rgba(0, 10, 50, 0.25) 100%
-    );
+body.page-home .section-title {
+    color: #ffffff;
+    border-bottom-color: rgba(255, 255, 255, 0.25);
 }
 
-.hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 680px;
-    color: #fff;
+body.page-home .about-text p {
+    color: rgba(220, 235, 255, 0.92);
 }
 
-.hero-tag {
-    font-size: 12px;
-    font-weight: 600;
-    color: rgba(160, 200, 255, 0.9);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 18px;
+body.page-home .quote-text {
+    color: rgba(200, 220, 255, 0.85);
+    border-left-color: rgba(120, 170, 255, 0.8);
 }
 
-.hero-name {
-    font-size: clamp(42px, 6vw, 72px);
-    font-weight: 700;
-    line-height: 1.05;
-    letter-spacing: -0.03em;
-    margin-bottom: 22px;
+body.page-home .edu-degree {
     color: #ffffff;
 }
 
-.hero-tagline {
-    font-size: 15.5px;
-    line-height: 1.7;
+body.page-home .edu-institution,
+body.page-home .edu-year {
+    color: rgba(190, 215, 255, 0.8);
+}
+
+body.page-home .news-item {
+    color: rgba(220, 235, 255, 0.92);
+}
+
+body.page-home .news-date {
+    color: rgba(160, 200, 255, 0.8);
+}
+
+body.page-home .sidebar-name {
+    color: #ffffff;
+}
+
+body.page-home .sidebar-title,
+body.page-home .sidebar-org {
     color: rgba(200, 220, 255, 0.82);
-    margin-bottom: 38px;
-    font-style: italic;
-    max-width: 520px;
-    border-left: 3px solid rgba(100, 160, 255, 0.6);
-    padding-left: 14px;
 }
 
-.hero-cta {
-    display: flex;
-    gap: 14px;
-    flex-wrap: wrap;
+body.page-home .sidebar-link {
+    color: rgba(210, 228, 255, 0.88);
 }
 
-.hero-btn {
-    display: inline-block;
-    background: #ffffff;
-    color: #111827;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 12px 26px;
-    border-radius: 3px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: background 0.15s;
+body.page-home .sidebar-link i {
+    color: rgba(160, 200, 255, 0.7);
 }
 
-.hero-btn:hover {
-    background: #f0f4ff;
-    text-decoration: none;
-    color: #111827;
+body.page-home .sidebar-links {
+    border-top-color: rgba(255, 255, 255, 0.18);
 }
 
-.hero-btn-outline {
-    display: inline-block;
-    border: 1.5px solid rgba(255, 255, 255, 0.55);
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 12px 26px;
-    border-radius: 3px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: border-color 0.15s, background 0.15s;
-}
-
-.hero-btn-outline:hover {
-    border-color: #ffffff;
+body.page-home .interest-tag {
     background: rgba(255, 255, 255, 0.12);
-    text-decoration: none;
-    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.22);
+    color: rgba(220, 235, 255, 0.92);
 }
 
-/* Nav: transparent over hero, white after scroll */
-body.page-home header {
-    background: transparent;
-    border-bottom-color: rgba(255, 255, 255, 0.12);
-    transition: background 0.3s ease, border-color 0.3s ease;
+body.page-home a {
+    color: rgba(150, 200, 255, 0.95);
 }
 
-body.page-home header.nav-scrolled {
-    background: rgba(255, 255, 255, 0.97);
-    border-bottom-color: #e5e7eb;
-    backdrop-filter: blur(8px);
-}
-
-body.page-home header .nav-brand,
-body.page-home header .nav-links li a {
-    color: rgba(255, 255, 255, 0.88);
-    transition: color 0.3s ease, border-color 0.3s ease;
-}
-
-body.page-home header.nav-scrolled .nav-brand,
-body.page-home header.nav-scrolled .nav-links li a {
-    color: #6b7280;
-}
-
-body.page-home header.nav-scrolled .nav-brand {
-    color: #111827;
-}
-
-body.page-home header .nav-links li a:hover,
-body.page-home header .nav-links li a.active {
-    color: #ffffff;
-    border-bottom-color: rgba(255, 255, 255, 0.7);
-}
-
-body.page-home header.nav-scrolled .nav-links li a:hover,
-body.page-home header.nav-scrolled .nav-links li a.active {
-    color: #2563eb;
-    border-bottom-color: #2563eb;
-}
-
-/* Home page: content below hero has padding-top 0 (no extra gap needed) */
-body.page-home .page-wrapper {
-    padding-top: 60px;
-}
-
-@media (max-width: 740px) {
-    .hero {
-        background-attachment: scroll;
-        padding: 0 6%;
-    }
-    .hero-name {
-        font-size: 38px;
-    }
+body.page-home footer {
+    color: rgba(180, 210, 255, 0.6);
+    border-top-color: rgba(255, 255, 255, 0.15);
 }
 
 /* ===== Home: Two-Column Layout ===== */
