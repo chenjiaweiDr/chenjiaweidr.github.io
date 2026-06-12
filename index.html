@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-home">
 
     <!-- Navigation -->
-    <header>
+    <header id="site-header">
         <nav>
             <a class="nav-brand" href="index.html">Jiawei Chen</a>
             <ul class="nav-links">
@@ -26,6 +26,22 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-tag">Postdoctoral Research Associate &nbsp;·&nbsp; Iowa State University</div>
+            <h1 class="hero-name">Jiawei Chen</h1>
+            <p class="hero-tagline">
+                Only a profound understanding of the underlying physics of turbulence can pave the way for truly effective turbulence modeling.
+            </p>
+            <div class="hero-cta">
+                <a href="#about" class="hero-btn">About Me ↓</a>
+                <a href="publications.html" class="hero-btn-outline">Publications →</a>
+                <a href="research.html" class="hero-btn-outline">Research →</a>
+            </div>
+        </div>
+    </section>
 
     <!-- Page Body -->
     <div class="page-wrapper">
@@ -182,6 +198,18 @@
     <footer>
         <p>&copy; 2026 Jiawei Chen &nbsp;&middot;&nbsp; Department of Aerospace Engineering, Iowa State University</p>
     </footer>
+
+    <script>
+        const header = document.getElementById('site-header');
+        const heroHeight = document.querySelector('.hero').offsetHeight;
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > heroHeight - 80) {
+                header.classList.add('nav-scrolled');
+            } else {
+                header.classList.remove('nav-scrolled');
+            }
+        });
+    </script>
 
 </body>
 </html>

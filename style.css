@@ -11,11 +11,11 @@ body {
     font-size: 15px;
     line-height: 1.7;
     color: #2d2d2d;
-    background-color: #0a2a8c;
-    background-image: url('background/DIT.png');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    background: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 a {
@@ -99,8 +99,170 @@ nav {
     max-width: 980px;
     margin: 0 auto;
     padding: 80px 28px 60px;
-    background-color: rgba(255, 255, 255, 0.97);
-    box-shadow: 0 0 60px rgba(0, 20, 100, 0.18);
+}
+
+/* ===== Hero (Home page only) ===== */
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background-image: url('background/DIT.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        105deg,
+        rgba(0, 5, 30, 0.80) 0%,
+        rgba(0, 10, 50, 0.55) 60%,
+        rgba(0, 10, 50, 0.25) 100%
+    );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 680px;
+    color: #fff;
+}
+
+.hero-tag {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(160, 200, 255, 0.9);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.hero-name {
+    font-size: clamp(42px, 6vw, 72px);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: 22px;
+    color: #ffffff;
+}
+
+.hero-tagline {
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: rgba(200, 220, 255, 0.82);
+    margin-bottom: 38px;
+    font-style: italic;
+    max-width: 520px;
+    border-left: 3px solid rgba(100, 160, 255, 0.6);
+    padding-left: 14px;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: #ffffff;
+    color: #111827;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 12px 26px;
+    border-radius: 3px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.15s;
+}
+
+.hero-btn:hover {
+    background: #f0f4ff;
+    text-decoration: none;
+    color: #111827;
+}
+
+.hero-btn-outline {
+    display: inline-block;
+    border: 1.5px solid rgba(255, 255, 255, 0.55);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 12px 26px;
+    border-radius: 3px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.hero-btn-outline:hover {
+    border-color: #ffffff;
+    background: rgba(255, 255, 255, 0.12);
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Nav: transparent over hero, white after scroll */
+body.page-home header {
+    background: transparent;
+    border-bottom-color: rgba(255, 255, 255, 0.12);
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+body.page-home header.nav-scrolled {
+    background: rgba(255, 255, 255, 0.97);
+    border-bottom-color: #e5e7eb;
+    backdrop-filter: blur(8px);
+}
+
+body.page-home header .nav-brand,
+body.page-home header .nav-links li a {
+    color: rgba(255, 255, 255, 0.88);
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+body.page-home header.nav-scrolled .nav-brand,
+body.page-home header.nav-scrolled .nav-links li a {
+    color: #6b7280;
+}
+
+body.page-home header.nav-scrolled .nav-brand {
+    color: #111827;
+}
+
+body.page-home header .nav-links li a:hover,
+body.page-home header .nav-links li a.active {
+    color: #ffffff;
+    border-bottom-color: rgba(255, 255, 255, 0.7);
+}
+
+body.page-home header.nav-scrolled .nav-links li a:hover,
+body.page-home header.nav-scrolled .nav-links li a.active {
+    color: #2563eb;
+    border-bottom-color: #2563eb;
+}
+
+/* Home page: content below hero has padding-top 0 (no extra gap needed) */
+body.page-home .page-wrapper {
+    padding-top: 60px;
+}
+
+@media (max-width: 740px) {
+    .hero {
+        background-attachment: scroll;
+        padding: 0 6%;
+    }
+    .hero-name {
+        font-size: 38px;
+    }
 }
 
 /* ===== Home: Two-Column Layout ===== */
@@ -724,24 +886,15 @@ nav {
 /* ===== Footer ===== */
 footer {
     border-top: 1px solid #e5e7eb;
-    margin-top: 0;
+    margin-top: 60px;
     padding: 24px 20px;
     text-align: center;
     color: #9ca3af;
     font-size: 12.5px;
-    max-width: 980px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(255, 255, 255, 0.97);
-    box-shadow: 0 4px 60px rgba(0, 20, 100, 0.18);
 }
 
 /* ===== Responsive ===== */
 @media (max-width: 740px) {
-    body {
-        background-attachment: scroll;
-    }
-
     .home-layout {
         grid-template-columns: 1fr;
         gap: 32px;
