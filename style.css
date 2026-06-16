@@ -649,21 +649,20 @@ body.page-home footer {
 
 /* Responsive 16:9 video embed */
 .research-video-wrap {
-    position: relative;
     width: 100%;
-    padding-top: 56.25%;
+    aspect-ratio: 16 / 9;
     margin-top: 20px;
     border-radius: 8px;
     overflow: hidden;
     background: #000;
+    display: block;
 }
 
 .research-video-wrap iframe {
-    position: absolute;
-    inset: 0;
     width: 100%;
     height: 100%;
     border: none;
+    display: block;
 }
 
 .research-coming-soon {
