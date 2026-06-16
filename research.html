@@ -125,7 +125,26 @@
                 </div>
 
                 <p class="research-description">
-                    Predicting unsteady, stochastic flow-separation dynamics over ice-contaminated airfoils is prohibitively expensive with high-fidelity CFD alone. This project develops a <strong>Transformer-diffusion generative framework</strong> that learns the conditional distribution of unsteady aerodynamic fields from a library of LES/DNS snapshots and can produce statistically faithful realizations at a fraction of the cost, enabling rapid uncertainty quantification for icing certification.
+                    This paper employs a transformer–diffusion framework to predict the spatiotemporal
+                    evolution of unsteady flow separation over an iced airfoil. The training dataset is
+                    generated using high-fidelity URANS simulations of an iced airfoil profile across a
+                    range of Reynolds numbers and angles of attack. The generalization capability of the
+                    framework is systematically evaluated by predicting flow conditions excluded from the
+                    training set, including different angles of attack and different Reynolds numbers.
+                    Three flow variables---streamwise velocity, transverse velocity, and pressure---are
+                    simultaneously predicted. The predictive performance is assessed through instantaneous
+                    flow field comparisons, surface pressure coefficient distributions, integral
+                    aerodynamic force coefficients, and point-wise unsteady flow histories within the
+                    separation region.
+                </p>
+                <p class="research-description">
+                    The contributions of this work lie in adapting and extending the G-LED framework to 
+                    the challenging problem of unsteady separated flow over iced airfoils, which 
+                    involves: (1) simultaneous prediction of three flow variables (streamwise velocity, 
+                    transverse velocity, and pressure); (2) a dedicated geometry-aware preprocessing 
+                    strategy for the body-fitted C-type computational mesh of iced-airfoil geometries; 
+                    and (3) a systematic evaluation of generalization capability across unseen angles 
+                    of attack and Reynolds numbers for an aerodynamically relevant icing scenario.
                 </p>
 
                 <div class="research-video-wrap">
