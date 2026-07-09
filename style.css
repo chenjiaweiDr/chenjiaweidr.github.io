@@ -483,6 +483,9 @@ body.page-home footer {
     font-size: 14px;
     color: #6b7280;
     margin-bottom: 48px;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
 }
 
 .research-project {
@@ -562,6 +565,9 @@ body.page-home footer {
     color: #374151;
     line-height: 1.75;
     margin-bottom: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
 }
 
 /* Figure grid */
@@ -579,6 +585,14 @@ body.page-home footer {
 
 .research-figures.cols-2 {
     grid-template-columns: repeat(2, 1fr);
+}
+
+/* Equal-height row: images fill fixed height, aspect ratio preserved */
+.figs-fixed-height .research-figure img {
+    height: 280px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
 .research-figure {
