@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grantsmanship &amp; Teaching – Jiawei Chen</title>
+    <meta name="description" content="Grantsmanship and teaching activities by Jiawei Chen at Iowa State University.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <a class="nav-brand" href="index.html">Jiawei Chen</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="grantsmanship.html" class="active">Grantsmanship &amp; Teaching</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="CV_Jiawei_Chen.pdf" target="_blank">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-wrapper">
+        <div class="research-container">
+
+            <h1>Grantsmanship &amp; Teaching</h1>
+            <p class="research-intro">
+                Activities related to research funding, proposal development, and teaching at Iowa State University.
+            </p>
+
+            <!-- ============================================================
+                 GRANTSMANSHIP
+                 ============================================================ -->
+            <h2 class="section-title" style="margin-bottom:24px;">Grantsmanship</h2>
+
+            <!-- Item 1 — Research Security Training -->
+            <div class="research-project">
+                <div class="research-project-header">
+                    <span class="research-project-num">01</span>
+                    <h2 class="research-project-title">
+                        Research Security Training <span class="pub-badge badge-accepted">Completed</span>
+                    </h2>
+                </div>
+
+                <p class="research-description">
+                    I completed the Research Security Training required by Iowa State University, covering export control regulations, research integrity, and national security considerations relevant to federally funded research.
+                </p>
+
+                <div class="research-figure" style="max-width:420px; margin:0 auto;">
+                    <img src="gransmanship/research-security-certificate.png"
+                         alt="Certificate of Research Security Training"
+                         style="cursor:zoom-in;"
+                         onclick="openLightbox('gransmanship/research-security-certificate.png')">
+                    <p class="fig-caption">Certificate of Research Security Training, Iowa State University.</p>
+                </div>
+            </div>
+
+            <!-- Item 2 — CCE Grantsmanship Microcredential -->
+            <div class="research-project">
+                <div class="research-project-header">
+                    <span class="research-project-num">02</span>
+                    <h2 class="research-project-title">
+                        CCE Grantsmanship Microcredential <span class="pub-badge badge-accepted">Completed</span>
+                    </h2>
+                </div>
+
+                <p class="research-description">
+                    I completed the Center for Communication Excellence (CCE) Grantsmanship Summer Intensive at Iowa State University, a self-paced microcredential program covering strategies for identifying funding opportunities, developing competitive research narratives, and effective grant writing.
+                </p>
+            </div>
+
+            <!-- Item 3 — NSF CDS&E Proposal -->
+            <div class="research-project" style="border-bottom:none; margin-bottom:40px;">
+                <div class="research-project-header">
+                    <span class="research-project-num">03</span>
+                    <h2 class="research-project-title">
+                        NSF CDS&amp;E Proposal Submission <span class="pub-badge badge-review">Submitted</span>
+                    </h2>
+                </div>
+
+                <p class="research-description">
+                    As Principal Investigator (PI), with my advisor serving as Co-PI, I prepared and submitted a research proposal to the National Science Foundation's <strong>Computational and Data-Enabled Science and Engineering (CDS&amp;E)</strong> program, requesting funding to support research at the intersection of computational and data-driven methods in fluid dynamics.
+                </p>
+            </div>
+
+            <!-- ============================================================
+                 TEACHING
+                 ============================================================ -->
+            <h2 class="section-title" style="margin-bottom:24px;">Teaching</h2>
+
+            <div class="research-coming-soon">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <p>Teaching content coming soon.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Jiawei Chen &nbsp;&middot;&nbsp; Department of Aerospace Engineering, Iowa State University</p>
+    </footer>
+
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.getElementById('lightbox-img').src = '';
+        }
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+
+</body>
+</html>
