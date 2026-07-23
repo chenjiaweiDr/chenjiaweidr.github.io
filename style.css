@@ -8,7 +8,7 @@
 /* ===== Base ===== */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.7;
     color: #2d2d2d;
     background: #ffffff;
@@ -516,7 +516,7 @@ body.page-dark footer {
 }
 
 .pub-subtitle {
-    font-size: 14px;
+    font-size: 15px;
     color: #6b7280;
     margin-bottom: 38px;
 }
@@ -545,8 +545,8 @@ body.page-dark footer {
 .pub-entry {
     display: flex;
     gap: 14px;
-    font-size: 14px;
-    line-height: 1.65;
+    font-size: 15.5px;
+    line-height: 1.7;
     color: #374151;
 }
 
@@ -606,7 +606,7 @@ body.page-dark footer {
 }
 
 .research-container > .research-intro {
-    font-size: 14px;
+    font-size: 15.5px;
     color: #6b7280;
     margin-bottom: 48px;
     text-align: justify;
@@ -687,9 +687,9 @@ body.page-dark footer {
 }
 
 .research-description {
-    font-size: 14.5px;
+    font-size: 16px;
     color: #374151;
-    line-height: 1.75;
+    line-height: 1.8;
     margin-bottom: 20px;
     text-align: justify;
     text-justify: inter-word;
@@ -759,7 +759,7 @@ body.page-dark footer {
 }
 
 .fig-caption {
-    font-size: 12.5px;
+    font-size: 13.5px;
     color: #6b7280;
     line-height: 1.45;
     text-align: center;
@@ -774,9 +774,9 @@ body.page-dark footer {
     border-left: 3px solid #2563eb;
     padding: 12px 16px;
     border-radius: 0 6px 6px 0;
-    font-size: 13.5px;
+    font-size: 15px;
     color: #374151;
-    line-height: 1.6;
+    line-height: 1.65;
     margin-top: 6px;
 }
 
