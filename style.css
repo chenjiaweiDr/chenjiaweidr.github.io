@@ -177,6 +177,132 @@ body.page-home footer {
     border-top-color: rgba(255, 255, 255, 0.15);
 }
 
+/* ===== Dark theme (all pages except Home) ===== */
+body.page-dark {
+    background: #0a0a0a;
+    color: #e5e7eb;
+}
+
+body.page-dark header {
+    background: rgba(10, 10, 10, 0.92);
+    border-bottom-color: #262626;
+}
+
+body.page-dark .nav-brand {
+    color: #ffffff;
+}
+
+body.page-dark .nav-links li a {
+    color: #9ca3af;
+}
+
+body.page-dark .nav-links li a:hover,
+body.page-dark .nav-links li a.active {
+    color: #60a5fa;
+    border-bottom-color: #60a5fa;
+}
+
+body.page-dark a {
+    color: #60a5fa;
+}
+
+body.page-dark a:hover {
+    color: #93c5fd;
+}
+
+body.page-dark .pub-container > h1,
+body.page-dark .research-container > h1,
+body.page-dark .photos-container > h1 {
+    color: #ffffff;
+}
+
+body.page-dark .pub-subtitle,
+body.page-dark .research-container > .research-intro {
+    color: #9ca3af;
+}
+
+body.page-dark .section-title,
+body.page-dark .pub-section-title {
+    color: #ffffff;
+    border-bottom-color: #262626;
+}
+
+body.page-dark .research-project {
+    border-bottom-color: #262626;
+}
+
+body.page-dark .research-project-num {
+    background: #1a1a1a;
+    border-color: #333333;
+    color: #9ca3af;
+}
+
+body.page-dark .research-project-title {
+    color: #ffffff;
+}
+
+body.page-dark .research-description,
+body.page-dark .pub-entry {
+    color: #d1d5db;
+}
+
+body.page-dark .pub-num {
+    color: #6b7280;
+}
+
+body.page-dark .fig-caption {
+    color: #9ca3af;
+}
+
+body.page-dark .research-figure img {
+    border-color: #333333;
+}
+
+body.page-dark .fig-placeholder {
+    background: #141414;
+    border-color: #333333;
+    color: #6b7280;
+}
+
+body.page-dark .fig-placeholder i {
+    color: #4b5563;
+}
+
+body.page-dark .research-paper-ref {
+    background: #141414;
+    border-color: #262626;
+    border-left-color: #3b82f6;
+    color: #d1d5db;
+}
+
+body.page-dark .research-paper-ref i {
+    color: #60a5fa;
+}
+
+body.page-dark .research-coming-soon {
+    background: #141414;
+    border-color: #333333;
+    color: #6b7280;
+}
+
+body.page-dark .research-coming-soon i {
+    color: #4b5563;
+}
+
+body.page-dark .photos-year-heading,
+body.page-dark .photos-container > h1 {
+    border-bottom-color: #3b82f6;
+}
+
+body.page-dark .photo-item {
+    background: #141414;
+}
+
+body.page-dark footer {
+    border-top-color: #262626;
+    color: #6b7280;
+}
+
 /* ===== Home: Two-Column Layout ===== */
 .home-layout {
     display: grid;
