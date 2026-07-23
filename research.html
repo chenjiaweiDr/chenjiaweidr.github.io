@@ -161,7 +161,22 @@
                 </div>
 
                 <p class="research-description">
-                    I am currently developing a differentiable computational fluid dynamics solver built on JAX, aimed at enabling gradient-based optimization and machine-learning-augmented turbulence modeling directly within the flow solver. The examples below show two flow cases computed with the solver in its current stage of development. As this work is still in progress and has not yet been published, further methodological details are withheld for now.
+                    <span class="highlight-blue">JAX</span> is an open-source Python library for accelerator-oriented array 
+                    computation and program transformation, originally developed by Google. It combines automatic 
+                    differentiation of native Python and NumPy code&mdash;via <code>jax.grad</code>, which can differentiate 
+                    through loops, branches, recursion, and closures, and can take derivatives of derivatives of 
+                    derivatives&mdash;with just-in-time compilation to XLA via <code>jax.jit</code>, letting functions be 
+                    compiled end-to-end for CPUs, GPUs, and TPUs. Its <code>jax.vmap</code> transform automatically 
+                    vectorizes code written for a single example across a batch, so these composable transformations 
+                    (grad, jit, vmap) can be combined arbitrarily to build efficient, differentiable numerical pipelines.
+                </p>
+
+                <p class="research-description">
+                    I am currently developing a differentiable computational fluid dynamics solver built on JAX, 
+                    aimed at enabling gradient-based optimization and machine-learning-augmented turbulence modeling 
+                    directly within the flow solver. The examples below show two flow cases computed with the solver 
+                    in its current stage of development. As this work is still in progress and has not yet been published, 
+                    further methodological details are withheld for now.
                 </p>
 
                 <div class="research-figures cols-2" style="margin-top:20px;">
