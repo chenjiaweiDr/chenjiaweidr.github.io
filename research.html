@@ -37,68 +37,51 @@
             </p>
 
             <!-- ============================================================
-                 PROJECT 1 — Ice Accretion Simulation
+                 PROJECT 1 — PhysMiner (LLM for Physics Discovery)
                  ============================================================ -->
             <div class="research-project">
                 <div class="research-project-header">
                     <span class="research-project-num">01</span>
                     <h2 class="research-project-title">
-                        Turbulence model development for large separation correction and roughness effects simulation
+                        PhysMiner: Large Language Model for Physics Discovery in Turbulence
                     </h2>
                 </div>
 
                 <p class="research-description">
-                    We have published seven peer-reviewed journal papers directly developing and validating turbulence models for large separation and roughness effects. A key contribution is the development of the <span class="highlight-blue">SRF (Separating Shear-Layer and Roughness Fix) <em>γ</em>-Re<sub>θt</sub> model</span>, which incorporates both large-separation correction and roughness-effect modeling. The model has been extensively validated in a range of separated and rough-wall flow cases, demonstrating improved predictive capability for both flow separation and roughness-induced transition. This work was published in <em>Physics of Fluids</em> and was selected as an Editor's Pick. The SRF <em>γ</em>-Re<sub>θt</sub> model has subsequently been applied to ice-accretion simulations and has successfully predicted the complex flow fields around iced airfoils and wings. The underlying modeling framework for large-separation correction and roughness treatment has proven effective and can be extended to other turbulence models, such as the <em>k</em>-<em>ω</em>-<em>γ</em> model.
+                    Uncovering the physical mechanisms of turbulent flows remains a fundamental challenge in fluid mechanics. In particular, conventional velocity-gradient analysis methods suffer from shear contamination, which hinders accurate identification of the dominant physical mechanisms. This study presents PhysMiner, an automated framework integrating the triple decomposition method of the velocity gradient tensor with large language model-driven reasoning for turbulence-physics discovery. The triple decomposition module automatically decomposes flow fields into rigid rotation, pure shearing, and normal straining components, enabling statistical analysis, contour visualization, vortex-line extraction, and threshold-insensitive vortex identification while eliminating shear contamination. These automated capabilities are validated across five benchmarks, ranging from canonical configurations to complex engineering flows.  A discover-physics agent combines flow statistics, spatial structures, and literature-derived knowledge to perform pattern recognition and physical inference, while a review Agent iteratively validates physical consistency to ensure reliable conclusions. A continuously evolving Triple Decomposition Library accumulates statistical knowledge from successfully analyzed flows, enabling cross-case comparison and progressive enhancement of inductive capability. The complete PhysMiner pipeline is validated end-to-end on the periodic hill flow, where the framework autonomously generates turbulence modeling recommendations and derives an improved subgrid-scale model with superior Reynolds-stress predictions. PhysMiner is open to the public and establishes a foundation for long-term collaborative advancement in automated turbulence-physics discovery.
                 </p>
 
                 <div class="research-paper-ref">
                     <i class="fa-solid fa-file-lines"></i>
                     <span>
-                        <strong>Chen, J.</strong>, Yang, P., Zhang, Y., &amp; Fu, S. (2024).
-                        Aerodynamic prediction and roughness implementation toward ice accretion simulation.
-                        <em>Physics of Fluids</em>, 36(1).
-                        &nbsp;<span class="pub-badge badge-editor">Editor's Pick</span>
+                        <strong>Chen, J.</strong>, Gao, H., &amp; He, P. (2026).
+                        PhysMiner: An Agentic AI Framework for Discovering Turbulence Physics.
+                        <em>Computer Methods in Applied Mechanics and Engineering</em>.
+                        &nbsp;<span class="pub-badge badge-review">Under Review</span>
                         &nbsp;&mdash;&nbsp;
-                        <a href="papers/chen2024aerodynamic.pdf" target="_blank">PDF</a>
+                        <a href="papers/chen2026physminer.pdf" target="_blank">PDF</a>
                     </span>
                 </div>
 
-                <!-- Row 1: 3 figures -->
-                <div class="research-figures cols-3" style="margin-top:20px;">
-
-                    <div class="research-figure">
-                        <img src="research/SRF-model/fig1a.png" alt="Ice shape comparison between simulation and experiment">
-                        <p class="fig-caption">(a) &nbsp;SST</p>
-                    </div>
-
-                    <div class="research-figure">
-                        <img src="research/SRF-model/fig1b.png" alt="Surface pressure and skin-friction coefficient">
-                        <p class="fig-caption">(b) &nbsp;<em>γ</em>-Re<sub>θt</sub> model</p>
-                    </div>
-
-                    <div class="research-figure">
-                        <img src="research/SRF-model/fig1c.png" alt="Streamlines and separation bubble structure">
-                        <p class="fig-caption">(c) &nbsp;SRF <em>γ</em>-Re<sub>θt</sub> model</p>
-                    </div>
-
+                <!-- Framework overview figure -->
+                <div style="margin-bottom: 20px; margin-top: 20px;">
+                    <img src="research/physminer/framework.png" alt="PhysMiner framework overview"
+                         style="max-width:100%; height:auto; display:block; margin:0 auto; border-radius:6px; border:1px solid #e5e7eb;">
+                    <p class="fig-caption" style="margin-top:8px;">
+                        Fig. 1 &nbsp;Overview of the PhysMiner framework.
+                    </p>
                 </div>
-                <p class="fig-caption" style="margin-top:6px;">Fig. 1 &nbsp;Separation prediction using different turbulence models</p>
 
-                <!-- Row 2: 2 figures -->
-                <div class="research-figures cols-2" style="margin-top:28px;">
-
-                    <div class="research-figure">
-                        <img src="research/SRF-model/fig2a.png" alt="CL-alpha polar for clean vs. iced airfoil">
-                        <p class="fig-caption">(a) &nbsp;<em>γ</em>-Re<sub>θt</sub> model</p>
-                    </div>
-
-                    <div class="research-figure">
-                        <img src="research/SRF-model/fig2b.png" alt="CD-alpha polar and stall onset comparison">
-                        <p class="fig-caption">(b) &nbsp;SRF <em>γ</em>-Re<sub>θt</sub> model</p>
-                    </div>
-
+                <!-- Demo video -->
+                <div class="research-video-wrap">
+                    <iframe
+                        src="https://www.youtube.com/embed/1GFCUxN6c_M"
+                        title="PhysMiner Demo"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
                 </div>
-                <p class="fig-caption" style="margin-top:6px;">Fig. 2 &nbsp;Earlier transition using SRF <em>γ</em>-Re<sub>θt</sub> model </p>
             </div>
 
 
@@ -127,12 +110,12 @@
                     separation region.
                 </p>
                 <p class="research-description">
-                    The contributions of this work lie in adapting and extending the G-LED framework to 
-                    the challenging problem of unsteady separated flow over iced airfoils, which 
-                    involves: (1) simultaneous prediction of three flow variables (streamwise velocity, 
-                    transverse velocity, and pressure); (2) a dedicated geometry-aware preprocessing 
-                    strategy for the body-fitted C-type computational mesh of iced-airfoil geometries; 
-                    and (3) a systematic evaluation of generalization capability across unseen angles 
+                    The contributions of this work lie in adapting and extending the G-LED framework to
+                    the challenging problem of unsteady separated flow over iced airfoils, which
+                    involves: (1) simultaneous prediction of three flow variables (streamwise velocity,
+                    transverse velocity, and pressure); (2) a dedicated geometry-aware preprocessing
+                    strategy for the body-fitted C-type computational mesh of iced-airfoil geometries;
+                    and (3) a systematic evaluation of generalization capability across unseen angles
                     of attack and Reynolds numbers for an aerodynamically relevant icing scenario.
                 </p>
 
@@ -149,41 +132,41 @@
 
 
             <!-- ============================================================
-                 PROJECT 3 — PhysMiner (LLM for Physics Discovery)
+                 PROJECT 3 — JAX-solver
                  ============================================================ -->
             <div class="research-project">
                 <div class="research-project-header">
                     <span class="research-project-num">03</span>
                     <h2 class="research-project-title">
-                        PhysMiner: Large Language Model for Physics Discovery in Turbulence
+                        JAX-solver: A Differentiable Flow Solver
                     </h2>
                 </div>
 
+                <div class="research-project-meta">
+                    <span class="research-tag research-tag-wip">Work in Progress</span>
+                </div>
+
                 <p class="research-description">
-                    Uncovering the physical mechanisms of turbulent flows remains a fundamental challenge in fluid mechanics. In particular, conventional velocity-gradient analysis methods suffer from shear contamination, which hinders accurate identification of the dominant physical mechanisms. This study presents PhysMiner, an automated framework integrating the triple decomposition method of the velocity gradient tensor with large language model-driven reasoning for turbulence-physics discovery. The triple decomposition module automatically decomposes flow fields into rigid rotation, pure shearing, and normal straining components, enabling statistical analysis, contour visualization, vortex-line extraction, and threshold-insensitive vortex identification while eliminating shear contamination. These automated capabilities are validated across five benchmarks, ranging from canonical configurations to complex engineering flows.  A discover-physics agent combines flow statistics, spatial structures, and literature-derived knowledge to perform pattern recognition and physical inference, while a review Agent iteratively validates physical consistency to ensure reliable conclusions. A continuously evolving Triple Decomposition Library accumulates statistical knowledge from successfully analyzed flows, enabling cross-case comparison and progressive enhancement of inductive capability. The complete PhysMiner pipeline is validated end-to-end on the periodic hill flow, where the framework autonomously generates turbulence modeling recommendations and derives an improved subgrid-scale model with superior Reynolds-stress predictions. PhysMiner is open to the public and establishes a foundation for long-term collaborative advancement in automated turbulence-physics discovery.
+                    I am currently developing a differentiable computational fluid dynamics solver built on JAX, aimed at enabling gradient-based optimization and machine-learning-augmented turbulence modeling directly within the flow solver. The examples below show two flow cases computed with the solver in its current stage of development. As this work is still in progress and has not yet been published, further methodological details are withheld for now.
                 </p>
 
-                <!-- Framework overview figure -->
-                <div style="margin-bottom: 20px;">
-                    <img src="research/physminer/framework.png" alt="PhysMiner framework overview"
-                         style="max-width:100%; height:auto; display:block; margin:0 auto; border-radius:6px; border:1px solid #e5e7eb;">
-                    <p class="fig-caption" style="margin-top:8px;">
-                        Fig. 1 &nbsp;Overview of the PhysMiner framework.
-                    </p>
-                </div>
-
-                <!-- Demo video -->
-                <div class="research-video-wrap">
-                    <iframe
-                        src="https://www.youtube.com/embed/1GFCUxN6c_M"
-                        title="PhysMiner Demo"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
+                <div class="research-figures cols-2" style="margin-top:20px;">
+                    <div class="research-figure">
+                        <div style="height:320px; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+                            <img src="research/JAX-solver/jax-les-DIT.png" alt="JAX-solver decaying isotropic turbulence simulation"
+                                 style="max-height:100%; max-width:100%; width:auto; height:auto; border-radius:6px;">
+                        </div>
+                        <p class="fig-caption">Decaying isotropic turbulence simulated with JAX-solver.</p>
+                    </div>
+                    <div class="research-figure">
+                        <div style="height:320px; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+                            <img src="research/JAX-solver/jax-les-channel.png" alt="JAX-solver turbulent channel flow simulation"
+                                 style="max-height:100%; max-width:100%; width:auto; height:auto; border-radius:6px;">
+                        </div>
+                        <p class="fig-caption">Turbulent channel flow simulated with JAX-solver.</p>
+                    </div>
                 </div>
             </div>
-
 
 
             <!-- ============================================================
@@ -252,40 +235,68 @@
 
 
             <!-- ============================================================
-                 PROJECT 5 — JAX-solver
+                 PROJECT 5 — Ice Accretion Simulation
                  ============================================================ -->
             <div class="research-project">
                 <div class="research-project-header">
                     <span class="research-project-num">05</span>
                     <h2 class="research-project-title">
-                        JAX-solver: A Differentiable Flow Solver
+                        Turbulence model development for large separation correction and roughness effects simulation
                     </h2>
                 </div>
 
-                <div class="research-project-meta">
-                    <span class="research-tag research-tag-wip">Work in Progress</span>
-                </div>
-
                 <p class="research-description">
-                    I am currently developing a differentiable computational fluid dynamics solver built on JAX, aimed at enabling gradient-based optimization and machine-learning-augmented turbulence modeling directly within the flow solver. The examples below show two flow cases computed with the solver in its current stage of development. As this work is still in progress and has not yet been published, further methodological details are withheld for now.
+                    We have published seven peer-reviewed journal papers directly developing and validating turbulence models for large separation and roughness effects. A key contribution is the development of the <span class="highlight-blue">SRF (Separating Shear-Layer and Roughness Fix) <em>γ</em>-Re<sub>θt</sub> model</span>, which incorporates both large-separation correction and roughness-effect modeling. The model has been extensively validated in a range of separated and rough-wall flow cases, demonstrating improved predictive capability for both flow separation and roughness-induced transition. This work was published in <em>Physics of Fluids</em> and was selected as an Editor's Pick. The SRF <em>γ</em>-Re<sub>θt</sub> model has subsequently been applied to ice-accretion simulations and has successfully predicted the complex flow fields around iced airfoils and wings. The underlying modeling framework for large-separation correction and roughness treatment has proven effective and can be extended to other turbulence models, such as the <em>k</em>-<em>ω</em>-<em>γ</em> model.
                 </p>
 
-                <div class="research-figures cols-2" style="margin-top:20px;">
-                    <div class="research-figure">
-                        <div style="height:320px; display:flex; align-items:center; justify-content:center; overflow:hidden;">
-                            <img src="research/JAX-solver/jax-les-DIT.png" alt="JAX-solver decaying isotropic turbulence simulation"
-                                 style="max-height:100%; max-width:100%; width:auto; height:auto; border-radius:6px;">
-                        </div>
-                        <p class="fig-caption">Decaying isotropic turbulence simulated with JAX-solver.</p>
-                    </div>
-                    <div class="research-figure">
-                        <div style="height:320px; display:flex; align-items:center; justify-content:center; overflow:hidden;">
-                            <img src="research/JAX-solver/jax-les-channel.png" alt="JAX-solver turbulent channel flow simulation"
-                                 style="max-height:100%; max-width:100%; width:auto; height:auto; border-radius:6px;">
-                        </div>
-                        <p class="fig-caption">Turbulent channel flow simulated with JAX-solver.</p>
-                    </div>
+                <div class="research-paper-ref">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>
+                        <strong>Chen, J.</strong>, Yang, P., Zhang, Y., &amp; Fu, S. (2024).
+                        Aerodynamic prediction and roughness implementation toward ice accretion simulation.
+                        <em>Physics of Fluids</em>, 36(1).
+                        &nbsp;<span class="pub-badge badge-editor">Editor's Pick</span>
+                        &nbsp;&mdash;&nbsp;
+                        <a href="papers/chen2024aerodynamic.pdf" target="_blank">PDF</a>
+                    </span>
                 </div>
+
+                <!-- Row 1: 3 figures -->
+                <div class="research-figures cols-3" style="margin-top:20px;">
+
+                    <div class="research-figure">
+                        <img src="research/SRF-model/fig1a.png" alt="Ice shape comparison between simulation and experiment">
+                        <p class="fig-caption">(a) &nbsp;SST</p>
+                    </div>
+
+                    <div class="research-figure">
+                        <img src="research/SRF-model/fig1b.png" alt="Surface pressure and skin-friction coefficient">
+                        <p class="fig-caption">(b) &nbsp;<em>γ</em>-Re<sub>θt</sub> model</p>
+                    </div>
+
+                    <div class="research-figure">
+                        <img src="research/SRF-model/fig1c.png" alt="Streamlines and separation bubble structure">
+                        <p class="fig-caption">(c) &nbsp;SRF <em>γ</em>-Re<sub>θt</sub> model</p>
+                    </div>
+
+                </div>
+                <p class="fig-caption" style="margin-top:6px;">Fig. 1 &nbsp;Separation prediction using different turbulence models</p>
+
+                <!-- Row 2: 2 figures -->
+                <div class="research-figures cols-2" style="margin-top:28px;">
+
+                    <div class="research-figure">
+                        <img src="research/SRF-model/fig2a.png" alt="CL-alpha polar for clean vs. iced airfoil">
+                        <p class="fig-caption">(a) &nbsp;<em>γ</em>-Re<sub>θt</sub> model</p>
+                    </div>
+
+                    <div class="research-figure">
+                        <img src="research/SRF-model/fig2b.png" alt="CD-alpha polar and stall onset comparison">
+                        <p class="fig-caption">(b) &nbsp;SRF <em>γ</em>-Re<sub>θt</sub> model</p>
+                    </div>
+
+                </div>
+                <p class="fig-caption" style="margin-top:6px;">Fig. 2 &nbsp;Earlier transition using SRF <em>γ</em>-Re<sub>θt</sub> model </p>
             </div>
 
         </div>
