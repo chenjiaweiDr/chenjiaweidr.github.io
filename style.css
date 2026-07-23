@@ -177,6 +177,11 @@ body.page-home footer {
     border-top-color: rgba(255, 255, 255, 0.15);
 }
 
+.highlight-blue {
+    color: #60a5fa;
+    font-weight: 600;
+}
+
 /* ===== Dark theme (all pages except Home) ===== */
 body.page-dark {
     background: #0a0a0a;
