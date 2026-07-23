@@ -567,34 +567,13 @@ body.page-dark footer {
 
 .pub-badge {
     display: inline-block;
-    font-size: 10.5px;
+    font-size: 13px;
     font-weight: 700;
-    padding: 1px 7px;
-    border-radius: 4px;
     margin-left: 6px;
     vertical-align: middle;
     white-space: nowrap;
-    letter-spacing: 0.02em;
-}
-
-.badge-editor {
-    background: #fef3c7;
-    color: #92400e;
-}
-
-.badge-featured {
-    background: #fee2e2;
-    color: #991b1b;
-}
-
-.badge-accepted {
-    background: #d1fae5;
-    color: #065f46;
-}
-
-.badge-review {
-    background: #e0e7ff;
-    color: #3730a3;
+    letter-spacing: 0.01em;
+    color: #f87171;
 }
 
 /* ===== Research Page ===== */
