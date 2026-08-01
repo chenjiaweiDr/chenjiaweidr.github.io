@@ -215,6 +215,9 @@ nav {
     color: #374151;
     margin-bottom: 10px;
     line-height: 1.75;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
 }
 
 .about-text p:last-child {
@@ -382,6 +385,11 @@ nav {
 
 .pub-badge::after {
     content: "]";
+}
+
+/* Publications page: author name / journal name highlights rendered black instead of blue */
+.pub-container .highlight-blue {
+    color: #111827;
 }
 
 /* ===== Research Page ===== */
