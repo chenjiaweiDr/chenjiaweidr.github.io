@@ -40,10 +40,7 @@ header {
     left: 0;
     right: 0;
     height: 56px;
-    background: rgba(255, 255, 255, 0.96);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-bottom: 1px solid #e5e7eb;
+    background: #57534e;
     z-index: 999;
     display: flex;
     align-items: center;
@@ -62,12 +59,13 @@ nav {
 .nav-brand {
     font-weight: 700;
     font-size: 16px;
-    color: #111827;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .nav-brand:hover {
-    color: #2563eb;
+    color: #ffffff;
+    opacity: 0.85;
     text-decoration: none;
 }
 
@@ -80,7 +78,7 @@ nav {
 .nav-links li a {
     font-size: 14px;
     font-weight: 500;
-    color: #6b7280;
+    color: rgba(255, 255, 255, 0.75);
     text-decoration: none;
     padding-bottom: 3px;
     border-bottom: 2px solid transparent;
@@ -89,8 +87,8 @@ nav {
 
 .nav-links li a:hover,
 .nav-links li a.active {
-    color: #2563eb;
-    border-bottom-color: #2563eb;
+    color: #ffffff;
+    border-bottom-color: #ffffff;
     text-decoration: none;
 }
 
@@ -101,207 +99,12 @@ nav {
     padding: 80px 28px 60px;
 }
 
-/* ===== Home page background + text colors ===== */
-body.page-home {
-    background: #0a0a0a;
-}
-
-body.page-home .section-title {
-    color: #ffffff;
-    border-bottom-color: #262626;
-}
-
-body.page-home .about-text p {
-    color: #d1d5db;
-}
-
-body.page-home .quote-text {
-    color: #9ca3af;
-    border-left-color: #60a5fa;
-}
-
-body.page-home .edu-degree {
-    color: #ffffff;
-}
-
-body.page-home .edu-institution,
-body.page-home .edu-year {
-    color: #9ca3af;
-}
-
-body.page-home .news-item {
-    color: #d1d5db;
-}
-
-body.page-home .news-date {
-    color: #9ca3af;
-}
-
-body.page-home .sidebar-name {
-    color: #ffffff;
-}
-
-body.page-home .sidebar-title,
-body.page-home .sidebar-org {
-    color: #9ca3af;
-}
-
-body.page-home .sidebar-link {
-    color: #d1d5db;
-}
-
-body.page-home .sidebar-link i {
-    color: #60a5fa;
-}
-
-body.page-home .sidebar-links {
-    border-top-color: #262626;
-}
-
-body.page-home .interest-tag {
-    background: #141414;
-    border-color: #333333;
-    color: #d1d5db;
-}
-
-body.page-home a {
-    color: #60a5fa;
-}
-
-body.page-home footer {
-    color: #6b7280;
-    border-top-color: #262626;
-}
+/* Home and other pages now share the single light theme defined below;
+   body.page-home / body.page-dark carry no color overrides. */
 
 .highlight-blue {
-    color: #60a5fa;
+    color: #2563eb;
     font-weight: 600;
-}
-
-/* ===== Dark theme (all pages except Home) ===== */
-body.page-dark {
-    background: #0a0a0a;
-    color: #e5e7eb;
-}
-
-body.page-dark header {
-    background: rgba(10, 10, 10, 0.92);
-    border-bottom-color: #262626;
-}
-
-body.page-dark .nav-brand {
-    color: #ffffff;
-}
-
-body.page-dark .nav-links li a {
-    color: #9ca3af;
-}
-
-body.page-dark .nav-links li a:hover,
-body.page-dark .nav-links li a.active {
-    color: #60a5fa;
-    border-bottom-color: #60a5fa;
-}
-
-body.page-dark a {
-    color: #60a5fa;
-}
-
-body.page-dark a:hover {
-    color: #93c5fd;
-}
-
-body.page-dark .pub-container > h1,
-body.page-dark .research-container > h1,
-body.page-dark .photos-container > h1 {
-    color: #ffffff;
-}
-
-body.page-dark .pub-subtitle,
-body.page-dark .research-container > .research-intro {
-    color: #9ca3af;
-}
-
-body.page-dark .section-title,
-body.page-dark .pub-section-title {
-    color: #ffffff;
-    border-bottom-color: #262626;
-}
-
-body.page-dark .research-project {
-    border-bottom-color: #262626;
-}
-
-body.page-dark .research-project-num {
-    background: #1a1a1a;
-    border-color: #333333;
-    color: #9ca3af;
-}
-
-body.page-dark .research-project-title {
-    color: #ffffff;
-}
-
-body.page-dark .research-description,
-body.page-dark .pub-entry {
-    color: #d1d5db;
-}
-
-body.page-dark .pub-num {
-    color: #6b7280;
-}
-
-body.page-dark .fig-caption {
-    color: #9ca3af;
-}
-
-body.page-dark .research-figure img {
-    border-color: #333333;
-}
-
-body.page-dark .fig-placeholder {
-    background: #141414;
-    border-color: #333333;
-    color: #6b7280;
-}
-
-body.page-dark .fig-placeholder i {
-    color: #4b5563;
-}
-
-body.page-dark .research-paper-ref {
-    background: #141414;
-    border-color: #262626;
-    border-left-color: #3b82f6;
-    color: #d1d5db;
-}
-
-body.page-dark .research-paper-ref i {
-    color: #60a5fa;
-}
-
-body.page-dark .research-coming-soon {
-    background: #141414;
-    border-color: #333333;
-    color: #6b7280;
-}
-
-body.page-dark .research-coming-soon i {
-    color: #4b5563;
-}
-
-body.page-dark .photos-year-heading,
-body.page-dark .photos-container > h1 {
-    border-bottom-color: #3b82f6;
-}
-
-body.page-dark .photo-item {
-    background: #141414;
-}
-
-body.page-dark footer {
-    border-top-color: #262626;
-    color: #6b7280;
 }
 
 /* ===== Home: Two-Column Layout ===== */
@@ -944,11 +747,11 @@ body.page-dark footer {
 
 /* ===== Footer ===== */
 footer {
-    border-top: 1px solid #e5e7eb;
+    background: #57534e;
     margin-top: 60px;
     padding: 24px 20px;
     text-align: center;
-    color: #9ca3af;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 12.5px;
 }
 
