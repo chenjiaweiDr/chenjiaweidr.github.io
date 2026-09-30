@@ -213,7 +213,7 @@ nav {
 
 /* About */
 .about-text p {
-    font-size: 14.3px;
+    font-size: 15.8px;
     color: #374151;
     margin-bottom: 10px;
     line-height: 1.65;
@@ -232,7 +232,7 @@ nav {
     border-left: 3px solid #2563eb;
     padding: 6px 0 6px 14px;
     margin: 16px 0;
-    font-size: 13.9px;
+    font-size: 15.8px;
     line-height: 1.65;
 }
 
@@ -267,19 +267,19 @@ nav {
 }
 
 .edu-degree {
-    font-size: 13.9px;
+    font-size: 15.8px;
     font-weight: 600;
     color: #111827;
     margin-bottom: 1px;
 }
 
 .edu-institution {
-    font-size: 12.9px;
+    font-size: 14.3px;
     color: #6b7280;
 }
 
 .edu-year {
-    font-size: 12.9px;
+    font-size: 14.3px;
     color: #9ca3af;
     white-space: nowrap;
     flex-shrink: 0;
@@ -297,7 +297,7 @@ nav {
     display: grid;
     grid-template-columns: 88px 1fr;
     gap: 12px;
-    font-size: 13.9px;
+    font-size: 15.8px;
     line-height: 1.6;
     color: #374151;
 }
@@ -325,7 +325,7 @@ nav {
 }
 
 .pub-subtitle {
-    font-size: 14.8px;
+    font-size: 15.8px;
     color: #6b7280;
     margin-bottom: 38px;
 }
@@ -354,7 +354,7 @@ nav {
 .pub-entry {
     display: flex;
     gap: 14px;
-    font-size: 14.3px;
+    font-size: 15.8px;
     line-height: 1.5;
     color: #374151;
     text-align: justify;
@@ -411,7 +411,7 @@ nav {
 }
 
 .research-container > .research-intro {
-    font-size: 15.4px;
+    font-size: 15.8px;
     color: #6b7280;
     margin-bottom: 48px;
     text-align: justify;
@@ -492,7 +492,7 @@ nav {
 }
 
 .research-description {
-    font-size: 14.3px;
+    font-size: 15.8px;
     color: #374151;
     line-height: 1.7;
     margin-bottom: 20px;
@@ -508,7 +508,7 @@ nav {
 }
 
 .research-bullet-list li {
-    font-size: 14.3px;
+    font-size: 15.8px;
     color: #374151;
     line-height: 1.7;
     text-align: justify;
@@ -598,7 +598,7 @@ nav {
     border-left: 3px solid #2563eb;
     padding: 12px 16px;
     border-radius: 0 6px 6px 0;
-    font-size: 14.8px;
+    font-size: 15.8px;
     color: #374151;
     line-height: 1.65;
     margin-top: 6px;
@@ -650,7 +650,7 @@ nav {
 }
 
 .research-coming-soon p {
-    font-size: 13.9px;
+    font-size: 15.8px;
     margin: 0;
 }
 
@@ -818,4 +818,38 @@ footer {
     .pub-num {
         text-align: left;
     }
+}
+
+/* Research page: equation blocks (rendered by KaTeX) */
+.research-equations {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 14px 20px 8px;
+    margin-bottom: 16px;
+    overflow-x: auto;
+}
+
+.research-equations .eq-title {
+    font-size: 15.8px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 4px;
+}
+
+.research-equations .eq-label {
+    font-size: 15.8px;
+    color: #374151;
+    margin-top: 10px;
+}
+
+.research-equations .katex-display {
+    margin: 6px 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 2px 0;
+}
+
+.research-equations .katex {
+    font-size: 1.05em;
 }
