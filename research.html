@@ -37,13 +37,9 @@
 
             <h1>Research</h1>
             <p class="research-intro">
-                Representative projects spanning <span class="highlight-blue">
-                turbulence modeling, 
-                heat transfer and roughness simulations,
-                IDDES simulations,
-                generative AI for fluid dynamics,
-                and large language models                 
-                </span>.
+                Representative projects spanning <span class="highlight-blue">generative learning for fluid dynamics,
+                agentic AI &amp; large language models for fluid dynamics, turbulence modeling and simulation (transition, RANS, LES),
+                and aerospace aerodynamics and aircraft icing</span>.
             </p>
 
             <!-- ============================================================
@@ -58,32 +54,30 @@
                 </div>
 
                 <p class="research-description">
-                    Uncovering the physical mechanisms of turbulent flows remains a fundamental challenge in fluid mechanics. 
-                    In particular, conventional velocity-gradient analysis methods suffer from shear contamination, which 
-                    hinders accurate identification of the dominant physical mechanisms. This study presents PhysMiner, 
-                    an automated framework integrating the <span class="highlight-blue">triple decomposition</span> method of the velocity gradient tensor 
-                    with <span class="highlight-blue">large language model-driven reasoning</span> for turbulence-physics discovery. The triple decomposition
-                     module automatically decomposes flow fields into rigid rotation, pure shearing, and normal straining
-                      components, enabling statistical analysis, contour visualization, vortex-line extraction, and 
-                      threshold-insensitive vortex identification while eliminating shear contamination. These automated
-                       capabilities are validated across five benchmarks, ranging from canonical configurations to complex
-                        engineering flows.  A discover-physics agent combines flow statistics, spatial structures, and 
-                        literature-derived knowledge to perform pattern recognition and physical inference, while a 
-                        review Agent iteratively validates physical consistency to ensure reliable conclusions. A continuously
-                         evolving Triple Decomposition Library accumulates statistical knowledge from successfully analyzed flows,
-                          enabling cross-case comparison and progressive enhancement of inductive capability. The complete PhysMiner
-                           pipeline is validated end-to-end on the periodic hill flow, where the framework autonomously generates 
-                           turbulence modeling recommendations and derives an improved subgrid-scale model with superior 
-                           Reynolds-stress predictions. <span class="highlight-blue">PhysMiner is open to the public and establishes a foundation for long-term
-                            collaborative advancement in automated turbulence-physics discovery</span>.
+                    In-depth flow analysis is essential for understanding flow physics and improving turbulence models.
+                    Such analysis, however, still relies heavily on human expertise and effort. This study presents PhysMiner,
+                    an automated agentic AI framework that combines the <span class="highlight-blue">triple decomposition method (TDM)</span> with
+                    <span class="highlight-blue">large language model (LLM)-driven reasoning</span> for turbulent flow analysis. TDM decomposes the
+                    velocity gradient tensor into rigid rotation, pure shearing, and normal straining. This turns raw flow fields into
+                    physically interpretable components for LLM analysis. PhysMiner stores these components in a triple decomposition
+                    library. The library supports knowledge reuse and cross-case comparison for later flow analysis. Existing LLM-based
+                    approaches rely heavily on subjective, user-defined prompting. PhysMiner instead grounds its reasoning in the
+                    literature or in user-specified research questions. This improves the determinism of the agentic workflow.
+                    PhysMiner is demonstrated on three flow cases: periodic hill, iced airfoil, and propeller wake. For the periodic
+                    hill flow, the agent uses the literature database and TDM to modify an existing subgrid-scale model by adding a
+                    rotation-suppression correction term. The modified model improves Reynolds-stress predictions over the standard
+                    baseline model. For the iced airfoil and propeller cases, PhysMiner uses TDM to separate shear from genuine rotation.
+                    It correctly identifies separating shear layers and vortex structures that conventional methods may misidentify.
+                    <span class="highlight-blue">PhysMiner is open to the public. It provides a foundation for long-term, collaborative
+                    progress in automated turbulence-physics discovery</span>.
                 </p>
 
                 <div class="research-paper-ref">
                     <i class="fa-solid fa-file-lines"></i>
                     <span>
                         <strong>Chen, J.</strong>, Gao, H., &amp; He, P. (2026).
-                        PhysMiner: An Agentic AI Framework for Discovering Turbulence Physics.
-                        <em>Computer Methods in Applied Mechanics and Engineering</em>.
+                        PhysMiner: An Agentic AI Framework for Automated Flow Component Analysis.
+                        <em>AIAA Journal</em>. <a href="https://arxiv.org/abs/2607.04009" target="_blank">arXiv:2607.04009</a>.
                         &nbsp;<span class="pub-badge badge-review">Under Review</span>
                         &nbsp;&mdash;&nbsp;
                         <a href="papers/chen2026physminer.pdf" target="_blank">PDF</a>
