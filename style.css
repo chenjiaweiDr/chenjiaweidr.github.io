@@ -327,7 +327,16 @@ nav {
 .pub-subtitle {
     font-size: 15.8px;
     color: #6b7280;
-    margin-bottom: 38px;
+    margin-bottom: 14px;
+}
+
+.pub-summary {
+    font-size: 15.8px;
+    color: #374151;
+    background: #f9fafb;
+    border-left: 3px solid #2563eb;
+    padding: 8px 14px;
+    margin-bottom: 34px;
 }
 
 .pub-section {
