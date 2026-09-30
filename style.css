@@ -860,3 +860,22 @@ footer {
         width: 100% !important;
     }
 }
+
+/* Grantsmanship & Teaching page: section headings above item titles, tighter item spacing */
+.page-grants .research-container > .section-title {
+    font-size: 22px;
+    margin-top: 8px;
+}
+
+.page-grants .research-project-title {
+    font-size: 17.5px;
+}
+
+.page-grants .research-project {
+    margin-bottom: 28px;
+    padding-bottom: 28px;
+}
+
+.page-grants .research-bullet-list {
+    margin-bottom: 8px;
+}
