@@ -107,11 +107,89 @@
 
 
             <!-- ============================================================
-                 PROJECT 2 — Generative Learning for Unsteady Aerodynamics
+                 PROJECT 2 — DEScover (Agentic AI for DES Length Scales)
                  ============================================================ -->
             <div class="research-project">
                 <div class="research-project-header">
                     <span class="research-project-num">02</span>
+                    <h2 class="research-project-title">
+                        DEScover: Agentic AI for Automated Discovery of Subgrid Length Scales in Detached Eddy Simulation
+                    </h2>
+                </div>
+
+                <p class="research-description">
+                    Traditional turbulence-model development relies heavily on expert knowledge and is time-consuming.
+                    This study develops an <span class="highlight-blue">agentic AI framework, DEScover</span> (automated Discovery of DES closures),
+                    to explore subgrid length scales for detached eddy simulation (DES). The user provides only a modeling idea:
+                    the length scale is the grid width normal to the local vortex axis. <span class="highlight-blue">Four large language model (LLM)
+                    agents</span> then propose, review, implement, and evaluate candidate formulations and generate scripts for CFD simulations.
+                    The Discovery Agent infers the vortex axis from various vortex-identification methods. The candidates are tested on
+                    four cases spanning canonical and engineering flows: a flat plate, a backward-facing step, a free shear layer, and an
+                    iced airfoil. For all test cases, the best candidate consistently outperforms the standard length scale based on the
+                    maximum cell size. Its accuracy is similar to, or slightly better than, that of the expert-designed shear-layer-adapted
+                    length scale. Each agentic discovery run takes about 25 minutes on average, excluding the CFD simulations. These results
+                    show that <span class="highlight-blue">LLM-based reasoning can significantly accelerate the discovery of physically interpretable
+                    turbulence models</span> and reduce reliance on manual expert formulation.
+                </p>
+
+                <div class="research-paper-ref">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>
+                        <strong>Chen, J.</strong>, Yang, X. I. A., &amp; He, P. (2026).
+                        Automated Discovery of Physically Interpretable Subgrid Length Scales for Detached Eddy Simulation via Agentic AI.
+                        <em>Journal of Fluid Mechanics</em>. <a href="https://arxiv.org/abs/2610.29850" target="_blank">arXiv:2610.29850</a>.
+                        &nbsp;<span class="pub-badge badge-review">Under Review</span>
+                        &nbsp;&mdash;&nbsp;
+                        <a href="papers/chen2026DEScover.pdf" target="_blank">PDF</a>
+                    </span>
+                </div>
+
+                <div class="research-figures cols-3" style="margin-top:20px;">
+
+                    <div class="research-figure">
+                        <img src="research/DEScover/bfs_Q_max.jpg" alt="Backward-facing step Q-criterion isosurfaces, bfs_Q_max">
+                        <p class="fig-caption">(a) &nbsp;<em>Δ</em><sub>max</sub></p>
+                    </div>
+
+                    <div class="research-figure">
+                        <img src="research/DEScover/bfs_Q_omega.jpg" alt="Backward-facing step Q-criterion isosurfaces, bfs_Q_omega">
+                        <p class="fig-caption">(b) &nbsp;<em>Δ</em><sub><em>ω</em></sub></p>
+                    </div>
+
+                    <div class="research-figure">
+                        <img src="research/DEScover/bfs_Q_lambda2.jpg" alt="Backward-facing step Q-criterion isosurfaces, bfs_Q_lambda2">
+                        <p class="fig-caption">(c) &nbsp;<em>Δ</em><sub><em>λ</em><sub>2</sub></sub></p>
+                    </div>
+
+                    <div class="research-figure">
+                        <img src="research/DEScover/bfs_Q_swirl.jpg" alt="Backward-facing step Q-criterion isosurfaces, bfs_Q_swirl">
+                        <p class="fig-caption">(d) &nbsp;<em>Δ</em><sub>swirl</sub></p>
+                    </div>
+
+                    <div class="research-figure">
+                        <img src="research/DEScover/bfs_Q_r.jpg" alt="Backward-facing step Q-criterion isosurfaces, bfs_Q_r">
+                        <p class="fig-caption">(e) &nbsp;<em>Δ</em><sub>R</sub></p>
+                    </div>
+
+                    <div class="research-figure">
+                        <img src="research/DEScover/bfs_Q_sla.jpg" alt="Backward-facing step Q-criterion isosurfaces, bfs_Q_sla">
+                        <p class="fig-caption">(f) &nbsp;<em>Δ</em><sub>SLA</sub></p>
+                    </div>
+
+                </div>
+                <p class="fig-caption" style="margin-top:6px;">&nbsp;Vortex evolution in the backward-facing step predicted by different DES length scales.
+                    Isosurfaces of the dimensionless Q criterion, <em>Q</em>(<em>H</em>/<em>U</em><sub>ref</sub>)<sup>2</sup> = 0.05,
+                    colored by <em>U<sub>x</sub></em>/<em>U</em><sub>ref</sub>. <em>Δ</em><sub>R</sub> (Liutex-based vortex axis) is the best
+                    candidate discovered by DEScover; <em>Δ</em><sub>SLA</sub> is the expert-designed shear-layer-adapted length scale.</p>
+            </div>
+
+
+            <!-- ============================================================
+                 PROJECT 3 — Generative Learning for Unsteady Aerodynamics
+                 ============================================================ -->
+            <div class="research-project">
+                <div class="research-project-header">
+                    <span class="research-project-num">03</span>
                     <h2 class="research-project-title">
                         Generative Learning for Unsteady Aerodynamics over Iced Airfoils
                     </h2>
@@ -160,11 +238,11 @@
 
 
             <!-- ============================================================
-                 PROJECT 3 — JAX-solver
+                 PROJECT 4 — JAX-solver
                  ============================================================ -->
             <div class="research-project">
                 <div class="research-project-header">
-                    <span class="research-project-num">03</span>
+                    <span class="research-project-num">04</span>
                     <h2 class="research-project-title">
                         JAX-solver: A Differentiable Flow Solver
                     </h2>
@@ -210,11 +288,11 @@
 
 
             <!-- ============================================================
-                 PROJECT 4 — IDDES for Iced Wings
+                 PROJECT 5 — IDDES for Iced Wings
                  ============================================================ -->
             <div class="research-project">
                 <div class="research-project-header">
-                    <span class="research-project-num">04</span>
+                    <span class="research-project-num">05</span>
                     <h2 class="research-project-title">
                         IDDES method for complex geometry flows: iced wings
                     </h2>
@@ -275,11 +353,11 @@
 
 
             <!-- ============================================================
-                 PROJECT 5 — Ice Accretion Simulation
+                 PROJECT 6 — Ice Accretion Simulation
                  ============================================================ -->
             <div class="research-project">
                 <div class="research-project-header">
-                    <span class="research-project-num">05</span>
+                    <span class="research-project-num">06</span>
                     <h2 class="research-project-title">
                         Turbulence model development for large separation correction and roughness effects simulation
                     </h2>
@@ -356,11 +434,11 @@
 
 
             <!-- ============================================================
-                 PROJECT 6 — Advanced Vortex Identification
+                 PROJECT 7 — Advanced Vortex Identification
                  ============================================================ -->
             <div class="research-project" style="border-bottom:none; margin-bottom:40px;">
                 <div class="research-project-header">
-                    <span class="research-project-num">06</span>
+                    <span class="research-project-num">07</span>
                     <h2 class="research-project-title">
                         Advanced Vortex Identification
                     </h2>
